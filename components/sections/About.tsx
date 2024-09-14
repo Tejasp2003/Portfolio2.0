@@ -2,7 +2,6 @@
 
 import React from "react";
 import { HeroHighlight } from "../ui/hero-highlight";
-import Typewriter from "typewriter-effect";
 import { motion } from "framer-motion";
 import { FloatingDock } from "../ui/floating-dock";
 import Image from "next/image";
@@ -12,8 +11,7 @@ import {
   IconBrandLinkedin,
   IconBrandX,
 } from "@tabler/icons-react";
-import { BackgroundLines } from "../ui/background-lines";
-import { FlipWords } from "../ui/flip-worrds";
+import { FlipWords } from "../ui/flip-words";
 
 const roleList = [
   "Full Stack Developer",

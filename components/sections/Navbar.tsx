@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { FloatingNav } from "../ui/floating-navbar";
-import { IconHome, IconMessage, IconUser } from "@tabler/icons-react";
+import { IconHome } from "@tabler/icons-react";
 import { PiSuitcaseBold } from "react-icons/pi";
 import { FaLaptopCode } from "react-icons/fa6";
 import { CgBrowser } from "react-icons/cg";

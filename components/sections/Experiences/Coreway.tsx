@@ -1,5 +1,4 @@
 import { RxDoubleArrowRight } from "react-icons/rx";
-import { motion } from "framer-motion";
 
 const Coreway = () => {
   return (

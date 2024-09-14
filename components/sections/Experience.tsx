@@ -1,7 +1,6 @@
 
 import React, { useState } from 'react'
 import Coreway from './Experiences/Coreway';
-import { BackgroundBeams } from '../ui/background-beams';
 
 const Experience = ({ setActiveTab } : { setActiveTab : (tab: string) => void; }) => {
     const [workCoreway, setWorkCoreway] = useState(true);
