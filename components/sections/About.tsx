@@ -72,7 +72,7 @@ const About = ({ setActiveTab }: { setActiveTab: (tab: string) => void }) => {
     >
       <div className="h-screen flex overflow-x-hidden ">
         <div className="w-full h-full">
-          <HeroHighlight containerClassName="rounded-3xl dark:bg-gray-950 h-screen p-20 w-full">
+          <HeroHighlight containerClassName="rounded-3xl bg-gray-950 h-screen p-20 w-full">
             <div className="flex flex-col items-center justify-center w-full z-10 relative gap-8">
               <div
                 about="name"
@@ -82,7 +82,7 @@ const About = ({ setActiveTab }: { setActiveTab: (tab: string) => void }) => {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.5, delay: 0.6 }}
-                  className="text-lg  tracking-wide text-textGreen"
+                  className="text-lg tracking-wide text-textGreen"
                 >
                   Hi 👋, I'm
                 </motion.h3>
@@ -91,14 +91,14 @@ const About = ({ setActiveTab }: { setActiveTab: (tab: string) => void }) => {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.5, delay: 0.7 }}
-                  className="text-4xl lg:text-7xl font-titleFont font-semibold flex flex-col text-center text-nowrap"
+                  className="text-4xl lg:text-7xl font-titleFont font-extrabold flex flex-col text-center text-nowrap"
                 >
                   Tosha Patel
                 </motion.h1>
                 <div className="flex justify-center items-center text-2xl w-full lg:text-6xl mt-6  pb-1 px-1 rounded-xl ">
                   <FlipWords
                     words={roleList}
-                    className="w-full text-center font-semibold text-textLight bg-gray-800 rounded-xl p-2"
+                    className="w-full text-center font-semibold text-textLight bg-gray-900 rounded-xl p-2"
                   />
                 </div>
               </div>

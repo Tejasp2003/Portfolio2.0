@@ -1,20 +1,21 @@
+import React, { useState } from "react";
+import Coreway from "./Experiences/Coreway";
 
-import React, { useState } from 'react'
-import Coreway from './Experiences/Coreway';
+const Experience = ({
+  setActiveTab,
+}: {
+  setActiveTab: (tab: string) => void;
+}) => {
+  const [workCoreway, setWorkCoreway] = useState(true);
 
-const Experience = ({ setActiveTab } : { setActiveTab : (tab: string) => void; }) => {
-    const [workCoreway, setWorkCoreway] = useState(true);
+  const handleWork = (work: string) => {
+    if (work == "Cognizant") {
+      setWorkCoreway(false);
+    } else {
+      console.log("");
+    }
+  };
 
-    const handleWork = (work: string) => {
-      if (work == "Cognizant") {
-        setWorkCoreway(false);
-      } else {
-        console.log("");
-      }
-    };
-
-   
-  
   return (
     <section
       id="experience"
@@ -26,9 +27,7 @@ const Experience = ({ setActiveTab } : { setActiveTab : (tab: string) => void; }
       </h1>
 
       <div className="w-full md:w-[70%] lg:w-1/2 mx-auto mt-20">
-        <div
-          className="w-[100%] flex flex-col md:flex-row gap-10 md:gap-1"
-        >
+        <div className="w-[100%] flex flex-col md:flex-row gap-10 md:gap-1">
           <ul className="flex flex-col">
             <li
               onClick={() => handleWork("Coreway")}
@@ -41,12 +40,11 @@ const Experience = ({ setActiveTab } : { setActiveTab : (tab: string) => void; }
               Coreway Solutions
             </li>
           </ul>
-          {workCoreway && <Coreway/>}
+          {workCoreway && <Coreway />}
         </div>
       </div>
-      {/* <BackgroundBeams /> */}
     </section>
   );
-}
+};
 
-export default Experience
+export default Experience;

@@ -1,5 +1,3 @@
-import { IconBrandGithub } from "@tabler/icons-react";
-
 type Skill = {
   [key: string]: {
     name: string;
@@ -123,7 +121,7 @@ export const projectsData: Project[] = [
       { icon: "/assets/icons/tailwind.svg", name: "Tailwind CSS" },
       { icon: "/assets/icons/mongo.svg", name: "MongoDB" },
     ],
-    tags: ["full stack"],
+    tags: ["full stack", "frontend", "backend"],
   },
   {
     name: "Threads Clone",
@@ -138,7 +136,7 @@ export const projectsData: Project[] = [
       { icon: "/assets/icons/typescript.svg", name: "Typescript" },
       { icon: "/assets/icons/mongo.svg", name: "MongoDB" },
     ],
-    tags: ["full stack"],
+    tags: ["full stack", "frontend", "backend"],
   },
   {
     name: "Evently",
@@ -154,7 +152,7 @@ export const projectsData: Project[] = [
       { icon: "/assets/icons/mongo.svg", name: "MongoDB" },
       { icon: "/assets/icons/stripe.svg", name: "Stripe" },
     ],
-    tags: ["full stack"],
+    tags: ["full stack", "frontend", "backend"],
   },
   {
     name: "Weather App",
