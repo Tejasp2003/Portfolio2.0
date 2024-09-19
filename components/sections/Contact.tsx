@@ -64,6 +64,10 @@ const Contact = ({ setActiveTab }: { setActiveTab: (tab: string) => void }) => {
   const [loading, setLoading] = useState(false);
 
   const sendMessage = (e: any) => {
+    if(!form.name || !form.email || !form.message) {
+      toast.error("Please fill in all the fields.");
+      return;
+    }
     e.preventDefault();
     setLoading(true);
 
